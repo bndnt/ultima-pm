@@ -1,0 +1,70 @@
+//@mixin font-face($font-family, $url, $weight) {
+//  @font-face {
+//    font-family: "#{$font-family}";
+//    src: url("../fonts/#{$url}.woff") format("woff"),
+//    url("../fonts/#{$url}.woff2") format("woff2");
+//    font-weight: #{$weight};
+//    font-display: swap;
+//    font-style: normal;
+//  }
+//}
+@mixin font($font_name, $file_name, $weight, $style) {
+
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+@import "reset.scss";
+@import "fonts";
+
+
+:root{
+  --grayd3-color: #D3D3D3;
+  --grayac-color: #ACACAC;;
+  --graybe-color:  #BEBEBE;
+  --pink-color: #EC25A3;
+}
+
+$colorblack: #151515;
+$colorpinkeec25:#EC25A3;
+$colorlightdrayd3:#d3d3d3;
+$colorlightdrayac:#acacac;
+$widthxl: 1600px;
+$widthlg: 1200px;
+$widthmd:992px;
+$widthtable:760px;
+$widthsm:650px;
+$widthm:400px;
+*{
+  box-sizing: border-box;
+}
+html{
+
+}
+body {
+  font-family: 'CodecPro-Bold';
+  overflow-x: hidden;
+  //font-weight: 400;
+}
+.container{
+  width: 100%;
+  max-width: 1215px;
+  margin: 0 auto;
+}
+@import "header";
+@import "top-colors";
+@import "boost-sales";
+@import "course-for";
+@import "for";
+@import "mentors";
+@import "get-to-know";
+@import "course-works";
+@import "fastest-way";
+@import "price";
+@import "faq";
+@import "footer";
+@import "fixed";

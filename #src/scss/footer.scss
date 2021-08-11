@@ -1,0 +1,164 @@
+.footer{
+  .container{
+    max-width: 1440px;
+
+  }
+  &__wrapper{
+    padding: 33px 88px 112px 48px;
+    @media (max-width: 1200px){
+      padding: 33px 15px 118px;
+    }
+    @media (max-width: 650px){
+      padding: 33px 20px 86px;
+    }
+
+  }
+  &__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 991px){
+      justify-content: normal;
+      flex-direction: column-reverse;
+    }
+  }
+  &__left{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: 'PTRootUI-Regular';
+    white-space: nowrap;
+    a{
+      text-decoration: none;
+      color: #000000;
+      transition: all .4s;
+      &:hover{
+        color: #167FB9;
+
+      }
+    }
+  }
+  &__flex{
+    display: flex;
+    font-family: 'PTRootUI-Regular';
+    @media (max-width: 991px){
+      flex-wrap: wrap;
+    }
+    @media (max-width: 650px){
+      justify-content: space-between;
+    }
+    @media (max-width: 500px){
+      width: 100%;
+    }
+    a{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      color: #000000;
+      align-items: center;
+      text-decoration: none;
+      transition: all .4s;
+      &:hover{
+        color: #167FB9;
+      }
+    }
+    span{
+      display: block;
+.br-mob{
+  display: none;
+  //@media (max-width: 500px) {
+  //  display: block;
+  //}
+}
+      @media (max-width: 991px){
+        margin-bottom: 30px!important;
+      }
+      &:first-child{
+        @media (max-width: 650px) {
+          order: 1;
+        }
+        @media (max-width: 500px) {
+          width: 100%;
+        }
+      }
+      &:nth-child(2){
+        margin: 0 110px!important;
+        @media (max-width: 1300px) {
+          margin: 0 55px;
+        }
+        @media (max-width: 1200px) {
+          margin: 0 35px!important;
+        }
+        @media (max-width: 650px) {
+          margin: 0 0 30px!important;
+        }
+      }
+      &:last-child{
+        @media (max-width: 650px) {
+          margin: 0 35px;
+          //margin: 0;
+        }
+        @media (max-width: 500px) {
+          margin: 0;
+
+        }
+      }
+    }
+  }
+  &__links-soc{
+    display: flex;
+    @media (max-width: 500px){
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+  &__soc-block{
+    width: 20px;
+    height: 20px;
+    margin-right: 30px;
+    transition: all .4s;
+    &:hover{
+      opacity: 0.7;
+    }
+    @media (max-width: 1200px){
+      margin-right: 20px;
+    }
+    @media (max-width: 991px){
+      width: 40px;
+      height: 40px;
+      margin-right: 34px;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 360px){
+      margin-right: 25px;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+    svg{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__info{
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(134, 140, 144, 0.8);
+    font-family: 'PTRootUI-Regular';
+    @media (max-width: 991px){
+      text-align: center;
+    }
+  }
+}

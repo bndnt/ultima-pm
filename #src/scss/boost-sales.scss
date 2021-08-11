@@ -1,0 +1,165 @@
+.boost-sales{
+  .container{
+    max-width: 1104px;
+    padding: 0 15px;
+    @media (max-width: 650px){
+      padding: 0 17px;
+    }
+  }
+  &__wrapper{
+    padding: 107px 0 100px;
+    @media (max-width: 991px){
+      padding: 30px 0 50px;
+    }
+    @media (max-width: 768px){
+      padding: 28px 0 50px;
+    }
+    @media (max-width: 650px){
+      padding: 22px 0 59px;
+    }
+  }
+  &__title{
+    font-style: normal;
+    //font-weight: 600;
+    font-family: 'CodecPro-ExtraBold';
+    font-size: 60px;
+    line-height: 123%;
+    max-width: 1047px;
+    @media (max-width: 991px) {
+      font-size: 42px;
+      width: 91%;
+    }
+    @media (max-width: 768px){
+      font-size: 36px;
+      width: 100%;
+    }
+    @media (max-width: 650px){
+      line-height: 132%;
+      text-align: center;
+      font-size: 34px;
+    }
+    span{
+      color: #23A2E8;
+    }
+  }
+  &__text{
+    max-width: 71%;
+    margin-top: 48px;
+    font-style: normal;
+    //font-weight: normal;
+    font-family: 'CodecPro-News';
+    font-size: 23px;
+    line-height: 157%;
+    color: #000000;
+    .br-mob{
+      display: none;
+      @media (max-width: 650px) {
+        display: block;
+      }
+    }
+    @media (max-width: 991px){
+      font-size: 19px;
+      margin-top: 35px;
+    }
+    @media (max-width: 768px){
+      font-size: 16px;
+    }
+    @media (max-width: 650px){
+      padding: 0 18px;
+      width: 100%;
+      margin-top: 20px;
+      text-align: center;
+      max-width: 100%;
+      line-height: 152%;
+    }
+  }
+  &__numbers-title{
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'CodecPro-ExtraBold';
+    font-size: 60px;
+    line-height: 157%;
+    color: #23A2E8;
+    margin-top: 51px;
+    text-align: right;
+    white-space: nowrap;
+    margin-right: -80px;
+    @media (max-width: 1200px){
+      font-size: 42px;
+      margin-right: 0;
+    }
+    @media (max-width: 991px){
+      margin-top: 40px;
+      font-size: 42px;
+    }
+    @media (max-width: 768px){
+      font-size: 36px;
+      //font-family: 'CodecPro-Bold';
+    }
+    @media (max-width: 650px){
+      text-align: center;
+      font-size: 34px;
+      display: block;
+      margin-top: 24px;
+    }
+    span{
+      font-size: 123px;
+      line-height: 193px;
+      @media (max-width: 991px){
+        font-size: 90px;
+        line-height: 120%;
+      }
+      @media (max-width: 768px){
+        font-size: 60px;
+        font-family: 'CodecPro-ExtraBold';
+      }
+      @media (max-width: 650px){
+        text-align: center;
+        font-size: 59px;
+        display: block!important;
+      }
+    }
+  }
+  &__right-text{
+    display: flex;
+    justify-content: flex-end;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 157%;
+    color: #000000;
+    margin-top: -38px;
+    //padding-right: 17px;
+    margin-right: -36px;
+    .br-mob{
+      display: none!important;
+      @media (max-width: 650px) {
+        display: block!important;
+      }
+    }
+    font-family: 'CodecPro-News';
+    @media (max-width: 1200px){
+      margin-right: 0;
+    }
+    @media (max-width: 991px){
+      font-size: 19px;
+      padding-right: 0;
+      margin-top: 0;
+    }
+    @media (max-width: 768px){
+      font-size: 16px;
+    }
+    @media (max-width: 650px){
+      width: 100%;
+      margin: 5px auto 0;
+      text-align: center;
+      justify-content: center;
+
+
+      br{
+        display: none;
+      }
+    }
+  }
+
+}

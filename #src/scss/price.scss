@@ -1,0 +1,542 @@
+.price{
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 49px;
+  margin-bottom: -45px;
+  @media (max-width: 650px){
+    padding-bottom: 0;
+    margin-bottom: -35px;
+  }
+  .container{
+    max-width: 966px;
+  }
+  &__wrapper{
+    padding: 61px 0 140px;
+    @media (max-width: 991px){
+      padding: 20px 0 100px 30px;
+    }
+    @media (max-width: 768px){
+      padding: 30px 14px 390px 14px;
+    }
+    @media (max-width: 650px){
+      padding: 21px 13px 38px 13px;
+    }
+  }
+  .price-sale{
+    z-index: 3;
+    position: absolute;
+    top: 141px;
+    left: 0;
+    width: 47vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 84px;
+    background: linear-gradient(90deg, #05DFFC 0%, #5EF3C1 100%);
+    border-radius: 0 15px 15px 0;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 140%;
+    color: #000000;
+    padding: 14px 69px 14px 0;
+    @media (max-width: 1200px) {
+      padding: 13px 59px 13px 0;
+      font-size: 25px;
+    }
+    @media (max-width: 991px) {
+      padding: 13px 40px 13px 0;
+      font-size: 20px;
+      white-space: nowrap;
+      top: 100px;
+    }
+    @media (max-width: 768px){
+      top: 20px;
+      right: 13px;
+      left: auto;
+      border-radius:15px ;
+      width: 61vw;
+      height: 70px;
+    }
+    @media (max-width: 650px){
+      width: 62vw;
+      border-radius: 9px;
+      top: 25px;
+      font-size: 14px;
+      padding: 7px;
+      height: 42px;
+      //white-space: nowrap;
+    }
+    @media (max-width: 360px){
+      top: 30px;
+      font-size: 11px;
+      padding: 7px;
+      height: 42px;
+    }
+    strong{
+      //font-family: 'CodecPro-ExtraBold';
+
+      font-size: 40px;
+      @media (max-width: 1200px) {
+        font-size: 39px;
+      }
+      @media (max-width: 991px) {
+        font-size: 30px;
+      }
+      @media (max-width: 650px){
+        font-size: 20px;
+      }
+      @media (max-width: 360px){
+        font-size: 17px;
+      }
+    }
+  }
+  &__title{
+    font-style: normal;
+    //font-weight: 600;
+    font-family: 'CodecPro-ExtraBold';
+
+    font-size: 60px;
+    line-height: 52px;
+    color: #000000;
+    @media (max-width: 1200px){
+      font-size: 42px;
+    }
+    @media (max-width: 991px) {
+      font-size: 40px;
+    }
+    @media (max-width: 768px){
+      font-size: 36px;
+      width: 100%;
+    }
+    @media (max-width: 650px){
+      font-size: 40px;
+    }
+    @media (max-width: 360px){
+      font-size: 32px;
+    }
+  }
+  &__block{
+    position: relative;
+  }
+  &__under{
+    background-image: url("../img/price__under.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 50px;
+    padding: 93px 55px 50px;
+    @media (max-width: 768px){
+      max-width: 100%;
+      margin-top: 40px;
+      padding: 30px 30px 100px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      background-image: url("../img/price__under2.png");
+    }
+    @media (max-width: 650px){
+      padding: 15px 15px 50px;
+      margin-top: 15px;
+      border-radius: 20px;
+      height: 409px;
+    }
+  }
+  &__under-one-minus{
+    margin-top: -5px;
+    @media (max-width: 650px){
+      margin-top: 0;
+    }
+  }
+  &__under-one-hide{
+
+    @media (max-width: 768px){
+      display: none;
+    }
+  }
+  &__line{
+
+    @media (max-width: 768px){
+      display: none;
+      color: transparent;
+      font-size: 0;
+    }
+  }
+  &__under-title{
+    font-style: normal;
+    //font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: "CodecPro-Bold";
+    @media (max-width: 991px){
+      font-size: 15px;
+    }
+    @media (max-width: 650px){
+
+      font-size: 14px;
+    }
+    @media (max-width: 360px){
+      font-size: 12px;
+    }
+  }
+  &__under-price{
+    color: #FFFFFF;
+    font-style: normal;
+    //font-weight: normal;
+    font-family: 'CodecPro-News';
+    font-size: 35px;
+    line-height: 91px;
+    margin-top: -10px;
+    @media (max-width: 991px){
+      font-size: 30px;
+      line-height: 60px;
+    }
+    @media (max-width: 768px){
+      font-size: 24px;
+      line-height: 60px;
+    }
+    @media (max-width: 650px){
+      margin-top: 0;
+      font-size: 22px;
+      line-height: 100%;
+      font-family: "CodecPro-News";
+    }
+    @media (max-width: 360px){
+     font-size: 20px;
+    }
+    strong{
+      font-size: 65px;
+      line-height: 140%;
+      font-family: 'CodecPro-ExtraBold';
+
+      @media (max-width: 991px){
+        font-size: 55px;
+      }
+      @media (max-width: 768px){
+        font-size: 30px;
+      }
+      @media (max-width: 650px){
+        font-size:27px ;
+      }
+      @media (max-width: 360px){
+        font-size: 23px;
+      }
+    }
+  }
+  &__under-price-small{
+    margin-top: -31px;
+    @media (max-width: 768px){
+      margin-top: 0;
+    }
+  }
+  &__under-after{
+    font-size: 25px;
+    @media (max-width: 991px){
+      font-size: 22px;
+    }
+    @media (max-width: 768px){
+      //display: block;
+      line-height: 20px;
+    }
+    @media (max-width: 650px){
+      display: inline;
+      line-height: 25px;
+      font-size: 25px;
+      font-family: "CodecPro-Bold";
+    }
+
+  }
+  &__under-prices-change{
+    margin-top: -5px;
+    display: flex;
+    @media (max-width: 768px){
+      flex-direction: column-reverse;
+      margin-top: 0;
+    }
+  }
+  &__under-old-price{
+    position: relative;
+    font-style: normal;
+    //font-weight: normal;
+    font-size: 22px;
+    line-height: 55px;
+    color:rgba(255, 255, 255, .4) ;
+    margin-right: 3px;
+    width: 125px;
+    font-family: 'CodecPro-News';
+    @media (max-width: 991px){
+      font-size: 20px;
+      width: 110px;
+    }
+    @media (max-width: 768px){
+      line-height: 120%;
+      font-size: 18px;
+    }
+    @media (max-width: 650px){
+      font-size: 17px;
+      line-height: 150%;
+      margin-top: 2px;
+      width: 55px;
+      white-space: nowrap;
+    }
+    @media (max-width: 360px){
+      font-size: 15px;
+    }
+    strong{
+      font-size: 37px;
+      //font-family: 'CodecPro-ExtraBold';
+
+      @media (max-width: 991px){
+        font-size:32px ;
+      }
+      @media (max-width: 768px){
+        font-size:28px ;
+      }
+      @media (max-width: 650px){
+        font-size:17px ;
+      }
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      top:45%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, .4);
+    }
+  }
+  &__new-price{
+    font-size: 22px;
+    line-height: 55px;
+    color:white;
+    font-family: 'CodecPro-News';
+
+    @media (max-width: 991px){
+      font-size: 20px;
+    }
+    @media (max-width: 650px){
+      font-size: 22px;
+      line-height: 100%;
+      margin-top: 10px;
+      font-family: "CodecPro-News";
+    }
+    strong{
+      //font-family: 'CodecPro-ExtraBold';
+
+      font-size: 37px;
+      @media (max-width: 991px) {
+        font-size: 30px;
+      }
+      @media (max-width: 650px) {
+        font-size: 27px;
+      }
+    }
+  }
+}
+.parcelas{
+  @media (max-width: 650px) {
+    display: none;
+  }
+}
+.parcelas-adapt{
+  display: none;
+  @media (max-width: 650px){
+    display: block;
+    font-size: 17px;
+    line-height: 140%;
+    /* identical to box height, or 24px */
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.price-form{
+  position: absolute;
+  left: auto;
+  right: 21px;
+  top: -75px;
+  width: 410px;
+  height: 534px;
+  padding: 40px 50px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 34px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(40px);
+  border-radius: 30px;
+  @media (max-width: 991px){
+    width: 385px;
+    height: 470px;
+    top: -15%;
+    padding: 30px 45px;
+  }
+  @media (max-width: 768px){
+    top: 180px;
+    width: 100%;
+    height: 450px;
+    right: 0;
+  }
+  @media (max-width: 650px){
+    position: static;
+    margin-top: -294px;
+    padding: 20px 26px 19px;
+    top: 115px;
+    min-height: 374px;
+    height: 413px;
+  }
+  @media (max-width: 360px){
+
+    height: 439px;
+  }
+  &__title{
+    width: 290px;
+    margin: 0 auto 30px;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 140%;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    @media (max-width: 991px){
+      font-size: 23px;
+    }
+    @media (max-width: 768px){
+      font-size: 23px;
+      width: 100%;
+    }
+    @media (max-width: 650px){
+      font-size: 19px;
+      width: 100%;
+      margin-bottom: 20px;
+      line-height: 129%;
+    }
+    span{
+      color:#167FB9;
+    }
+  }
+  .br-web{
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  &__input-block{
+    margin-bottom: 10px;
+    width: 100%;
+    background: rgba(134, 140, 144, 0.1);
+    border-radius: 10px;
+    padding: 13px 37px 13px 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 991px){
+      padding: 11px 37px 11px 9px;
+    }
+    @media (max-width: 650px){
+      padding: 13px 37px 13px 10px;
+    }
+  }
+  &__input-icon{
+    width: 24px;
+    height: 24px;
+    svg{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  input{
+    text-align: center;
+    width: calc(100% - 34px);
+    background-color: transparent;
+    font-style: normal;
+    //font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+    color: #000000;
+    font-family: 'CodecPro-News';
+    &::placeholder{
+      color: black!important;
+    }
+  }
+  label{
+    display: none;
+  }
+  &__btn{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 23px 5px;
+    background: #1EA0FF;
+    border-radius: 10px;
+    font-style: normal;
+    font-family: 'CodecPro-ExtraBold';
+    font-size: 20px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: all .4s;
+    cursor: pointer;
+    @media (max-width: 991px){
+      padding: 20px 5px;
+    }
+    @media (max-width: 650px){
+      padding: 23px 5px;
+      margin-top: 18px;
+    }
+    &:hover{
+      background-color: #168fd0;
+    }
+  }
+  &__btn-white{
+    display: none;
+    transition: all .4s;
+    border: 0.5px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'CodecPro-ExtraBold';
+    font-size: 20px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    cursor: pointer;
+    background-color: transparent;
+    &:hover{
+      &:hover{
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+  &__privacy{
+    font-family: 'CodecPro-News';
+    margin-top: 20px;
+    font-style: normal;
+    //font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: #B8B8B8;
+    white-space: nowrap;
+    @media (max-width: 650px){
+      margin-top: 15px;
+    }
+    @media (max-width: 370px){
+      font-size: 9.5px;
+    }
+    a{
+      color: black;
+      transition: all .4s;
+      &:hover{
+        color: #167FB9;
+      }
+    }
+  }
+
+
+}
