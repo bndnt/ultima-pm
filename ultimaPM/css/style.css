@@ -175,17 +175,17 @@ select {
 }
 
 @font-face {
-  font-family: "CodecPro-ExtraBold";
+  font-family: "CodecPro-Bold";
   font-display: swap;
-  src: url("../fonts/CodecPro-ExtraBold.woff") format("woff"), url("../fonts/CodecPro-ExtraBold.woff2") format("woff2");
+  src: url("../fonts/CodecPro-Bold.woff") format("woff"), url("../fonts/CodecPro-Bold.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "CodecPro-Bold";
+  font-family: "CodecPro-ExtraBold";
   font-display: swap;
-  src: url("../fonts/CodecPro-Bold.woff") format("woff"), url("../fonts/CodecPro-Bold.woff2") format("woff2");
+  src: url("../fonts/CodecPro-ExtraBold.woff") format("woff"), url("../fonts/CodecPro-ExtraBold.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -247,9 +247,9 @@ select {
 }
 
 @font-face {
-  font-family: "Gilroy-Thin";
+  font-family: "Gilroy-Regular";
   font-display: swap;
-  src: url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.woff2") format("woff2");
+  src: url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -263,9 +263,9 @@ select {
 }
 
 @font-face {
-  font-family: "Gilroy-Regular";
+  font-family: "Gilroy-Thin";
   font-display: swap;
-  src: url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.woff2") format("woff2");
+  src: url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -815,7 +815,7 @@ body {
   background-color: black;
   border-radius: 50%;
   left: 15px;
-  top: 50%;
+  top: 17px;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -860,6 +860,13 @@ body {
 
 .course-for__det-top {
   cursor: pointer;
+  min-height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .course-for__det-top:hover .course-for__open-block svg {
@@ -987,6 +994,12 @@ body {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
+}
+
+.course-for__detail-block.active-block {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .course-for__detail-block-not-visible.active {
@@ -1120,6 +1133,7 @@ body {
   width: 100%;
   height: 400px;
   border-radius: 70px;
+  overflow: hidden;
 }
 
 .mentors__slide-photo img {
@@ -1905,7 +1919,15 @@ body {
 }
 
 .faq__flex:last-child .faq__question {
-  width: 400px;
+  width: auto;
+}
+
+.faq__flex:nth-child(3) .faq__question {
+  width: auto;
+}
+
+.faq__flex:nth-child(5) .faq__question {
+  width: auto;
 }
 
 .faq__question {
@@ -2425,7 +2447,7 @@ body {
   }
 
   .faq__question {
-    max-width: 369px;
+    max-width: 435px;
     font-size: 18px;
   }
 
@@ -2672,6 +2694,7 @@ body {
 
   .get-to-know .course-for__open-more-icon {
     right: -32px;
+    top: 7px;
   }
 
   .course-works__wrapper {
@@ -3418,6 +3441,7 @@ body {
 
   .course-for__detail-text p span:before {
     left: 12px;
+    top: 14px;
   }
 
   .course-for__detail-title br {
@@ -3434,6 +3458,10 @@ body {
     top: 6px;
   }
 
+  .course-for__det-top {
+    min-height: 49px;
+  }
+
   .course-for__det-hidden {
     font-size: 18px;
     margin-top: 9px;
@@ -3441,7 +3469,7 @@ body {
 
   .course-for__open-more {
     margin-bottom: 20px;
-    margin-top: 46px;
+    margin-top: 40px;
   }
 
   .course-for__open-more-text {
@@ -3519,6 +3547,7 @@ body {
 
   .course-for__open-more-icon {
     right: -5px;
+    top: 5px;
   }
 
   .for .container {
@@ -3614,6 +3643,11 @@ body {
     height: 0;
   }
 
+  .get-to-know .course-for__open-more {
+    margin-top: 33px;
+    margin-bottom: 20px;
+  }
+
   .get-to-know__top-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3662,7 +3696,7 @@ body {
   }
 
   .course-works__image {
-    margin-top: 15px;
+    margin-top: 22px;
   }
 
   .course-works__info-flex {
@@ -3827,7 +3861,7 @@ body {
     padding: 20px 26px 19px;
     top: 115px;
     min-height: 374px;
-    height: 413px;
+    height: initial;
   }
 
   .price-form__title {
@@ -3858,6 +3892,14 @@ body {
     font-size: 34px;
     margin-bottom: 17px;
     white-space: nowrap;
+  }
+
+  .faq__flex:nth-child(3) .faq__question {
+    max-width: 300px;
+  }
+
+  .faq__flex:nth-child(5) .faq__question {
+    max-width: 307px;
   }
 
   .faq__question .br-mob {
@@ -3953,7 +3995,7 @@ body {
   }
 
   .course-for__detail-block {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 
   .course-for__det-hidden {
@@ -4100,15 +4142,12 @@ body {
     font-size: 15px;
   }
 
-  .price-form {
-    height: 439px;
-  }
-
   .faq__title {
     font-size: 29px;
   }
 
   .faq__question {
+    max-width: 329px;
     font-size: 16px;
     padding: 10px 15px;
   }

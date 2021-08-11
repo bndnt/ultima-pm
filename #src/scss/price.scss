@@ -384,11 +384,11 @@
     padding: 20px 26px 19px;
     top: 115px;
     min-height: 374px;
-    height: 413px;
+    height: initial;
   }
   @media (max-width: 360px){
 
-    height: 439px;
+    //height: 439px;
   }
   &__title{
     width: 290px;
