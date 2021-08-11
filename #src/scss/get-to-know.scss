@@ -214,6 +214,17 @@
       }
     }
   }
+  .course-for__open-more.rotate{
+      .course-for__open-more-text{
+        display: none;
+      }
+      .course-for__open-more-text-close{
+        display: block;
+      }
+      .course-for__open-more-icon{
+        transform: rotate(180deg);
+      }
+  }
   .course-for__open-block{
     top: 3px;
     right: -108px;

@@ -175,14 +175,6 @@ select {
 }
 
 @font-face {
-  font-family: "CodecPro-Bold";
-  font-display: swap;
-  src: url("../fonts/CodecPro-Bold.woff") format("woff"), url("../fonts/CodecPro-Bold.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "CodecPro-ExtraBold";
   font-display: swap;
   src: url("../fonts/CodecPro-ExtraBold.woff") format("woff"), url("../fonts/CodecPro-ExtraBold.woff2") format("woff2");
@@ -191,9 +183,9 @@ select {
 }
 
 @font-face {
-  font-family: "CodecPro-News";
+  font-family: "CodecPro-Bold";
   font-display: swap;
-  src: url("../fonts/CodecPro-News.woff") format("woff"), url("../fonts/CodecPro-News.woff2") format("woff2");
+  src: url("../fonts/CodecPro-Bold.woff") format("woff"), url("../fonts/CodecPro-Bold.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -202,6 +194,14 @@ select {
   font-family: "Gilroy-Black";
   font-display: swap;
   src: url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CodecPro-News";
+  font-display: swap;
+  src: url("../fonts/CodecPro-News.woff") format("woff"), url("../fonts/CodecPro-News.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -821,6 +821,11 @@ body {
           transform: translate(-50%, -50%);
 }
 
+.course-for__det-small {
+  position: relative;
+  top: -13px;
+}
+
 .course-for__detail-title {
   font-style: normal;
   font-weight: normal;
@@ -1303,6 +1308,20 @@ body {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.get-to-know .course-for__open-more.rotate .course-for__open-more-text {
+  display: none;
+}
+
+.get-to-know .course-for__open-more.rotate .course-for__open-more-text-close {
+  display: block;
+}
+
+.get-to-know .course-for__open-more.rotate .course-for__open-more-icon {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .get-to-know .course-for__open-block {
@@ -1919,7 +1938,8 @@ body {
 }
 
 .faq__flex:last-child .faq__question {
-  width: auto;
+  width: 100%;
+  max-width: 400px;
 }
 
 .faq__flex:nth-child(3) .faq__question {
@@ -2213,6 +2233,15 @@ body {
   display: none;
 }
 
+.thanks__container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1050px;
+  padding: 55px 15px 30px;
+  background-color: #fff;
+}
+
 @media (max-width: 1370px) {
   .faq__ask {
     right: -50px;
@@ -2444,6 +2473,10 @@ body {
 
   .faq__title {
     font-size: 42px;
+  }
+
+  .faq__flex:last-child .faq__question {
+    max-width: 365px;
   }
 
   .faq__question {
@@ -2935,6 +2968,10 @@ body {
     width: calc(100% - 30px);
   }
 
+  .course-for__det-small {
+    top: 0;
+  }
+
   .course-for__detail-title {
     width: 100%;
   }
@@ -3180,6 +3217,10 @@ body {
     margin-bottom: 30px;
   }
 
+  .faq__flex:nth-child(3) .faq__question {
+    max-width: 400px;
+  }
+
   .faq__flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3192,7 +3233,7 @@ body {
   }
 
   .faq__question {
-    max-width: 100%;
+    max-width: 420px;
     font-size: 18px;
   }
 
@@ -3459,7 +3500,7 @@ body {
   }
 
   .course-for__det-top {
-    min-height: 49px;
+    min-height: initial;
   }
 
   .course-for__det-hidden {
@@ -3696,7 +3737,7 @@ body {
   }
 
   .course-works__image {
-    margin-top: 22px;
+    margin-top: 34px;
   }
 
   .course-works__info-flex {
@@ -3895,7 +3936,7 @@ body {
   }
 
   .faq__flex:nth-child(3) .faq__question {
-    max-width: 300px;
+    max-width: 300px !important;
   }
 
   .faq__flex:nth-child(5) .faq__question {
