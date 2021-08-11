@@ -175,17 +175,17 @@ select {
 }
 
 @font-face {
-  font-family: "CodecPro-ExtraBold";
+  font-family: "CodecPro-Bold";
   font-display: swap;
-  src: url("../fonts/CodecPro-ExtraBold.woff") format("woff"), url("../fonts/CodecPro-ExtraBold.woff2") format("woff2");
+  src: url("../fonts/CodecPro-Bold.woff") format("woff"), url("../fonts/CodecPro-Bold.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "CodecPro-Bold";
+  font-family: "CodecPro-ExtraBold";
   font-display: swap;
-  src: url("../fonts/CodecPro-Bold.woff") format("woff"), url("../fonts/CodecPro-Bold.woff2") format("woff2");
+  src: url("../fonts/CodecPro-ExtraBold.woff") format("woff"), url("../fonts/CodecPro-ExtraBold.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -247,9 +247,9 @@ select {
 }
 
 @font-face {
-  font-family: "Gilroy-Thin";
+  font-family: "Gilroy-Regular";
   font-display: swap;
-  src: url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.woff2") format("woff2");
+  src: url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -263,9 +263,9 @@ select {
 }
 
 @font-face {
-  font-family: "Gilroy-Regular";
+  font-family: "Gilroy-Thin";
   font-display: swap;
-  src: url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.woff2") format("woff2");
+  src: url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -1540,6 +1540,138 @@ body {
 
 .fastest-way__flex-text .br-mob {
   display: none;
+}
+
+.lds-ellipsis {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -40px;
+  display: none;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-animation-timing-function: cubic-bezier(0, 1, 1, 0);
+          animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  -webkit-animation: lds-ellipsis1 0.6s infinite;
+          animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+          animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+          animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  -webkit-animation: lds-ellipsis3 0.6s infinite;
+          animation: lds-ellipsis3 0.6s infinite;
+}
+
+@-webkit-keyframes lds-ellipsis1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes lds-ellipsis3 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes lds-ellipsis3 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes lds-ellipsis2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate(24px, 0);
+            transform: translate(24px, 0);
+  }
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate(24px, 0);
+            transform: translate(24px, 0);
+  }
+}
+
+.price-form__btn {
+  position: relative;
+}
+
+.price-form__btn:disabled {
+  color: transparent;
+}
+
+.price-form__btn:disabled .lds-ellipsis {
+  display: block;
 }
 
 .price {

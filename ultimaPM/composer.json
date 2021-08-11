@@ -1,0 +1,7 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "^7.3",
+        "amocrm/amocrm-api-library": "^0.5.2",
+        "sentry/sdk": "^3.1"
+    }
+}

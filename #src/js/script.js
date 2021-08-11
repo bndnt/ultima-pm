@@ -1,3 +1,45 @@
+var mainFormProcessing = false,
+    mainFormSent = false;
+
+$('#main-form').submit(function(e) {
+    e.preventDefault();
+
+    if (mainFormProcessing || mainFormSent) return;
+
+    var $form = $(this);
+
+    mainFormProcessing = true;
+
+    $(this).find('button[type="submit"]').prop('disabled', true);
+
+    var data = {
+        name: $('#first').val(),
+        tel: $('#second').val(),
+        email: $('#third').val()
+    };
+
+    $.ajax({
+        method: 'post',
+        data: data,
+        url: '/gestao-de-produtos/process.php',
+        success: function() {
+            mainFormSent = true;
+            mainFormProcessing = false;
+
+            $form.find('button[type="submit"]').prop('disabled', false);
+
+            window.location = 'https://payment.ultima.school/design-thanks.html';
+        },
+        error: function() {
+            mainFormProcessing = false;
+
+            $form.find('button[type="submit"]').prop('disabled', false);
+
+            alert('Something went wrong :( Try again later.');
+        }
+    });
+});
+
 if ($(window).width() < 651){
     $(".course-for__d-b-visible-web").addClass("course-for__detail-block-not-visible");
     $(".get-to-know__d-b-visible-mob").addClass("get-to-know__point-hide-all");

@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="img/favicon.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css?v=1">
 </head>
 <body>
 <header class="header">
@@ -1229,7 +1229,7 @@ Conduzir o desenvolvimento do cliente
                 </div>
 
                 <div class="price-form" data-aos="fade-right" data-aos-duration="1000">
-                    <form action="">
+                    <form id="main-form">
                         <div class="price-form__title">
                             Garantia de
                             <span>100% <br class="br-web">
@@ -1246,7 +1246,7 @@ Conduzir o desenvolvimento do cliente
 
                             </div>
                             <label for="first"></label>
-                            <input id="first" type="text" class="price-form__input" placeholder="Nome">
+                            <input required id="first" type="text" class="price-form__input" placeholder="Nome">
                         </div>
                         <div class="price-form__input-block">
                             <div class="price-form__input-icon">
@@ -1256,7 +1256,7 @@ Conduzir o desenvolvimento do cliente
 
                             </div>
                             <label for="second"></label>
-                            <input id="second" type="text" class="price-form__input" placeholder="Telefone">
+                            <input required id="second" type="tel" class="price-form__input" placeholder="Telefone">
                         </div>
                         <div class="price-form__input-block">
                             <div class="price-form__input-icon">
@@ -1265,9 +1265,13 @@ Conduzir o desenvolvimento do cliente
                                 </svg>
                             </div>
                             <label for="third"></label>
-                            <input id="third" type="text" class="price-form__input" placeholder="Email">
+                            <input required id="third" type="email" class="price-form__input" placeholder="Email">
                         </div>
-                        <button class="price-form__btn">Inscreva-se</button>
+                        <button type="submit" class="price-form__btn">
+                            Inscreva-se
+
+                            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                        </button>
                         <button class="price-form__btn price-form__btn-white">Receba uma consulta</button>
                         <div class="price-form__privacy">
                             Ao clicar no botão, aceito a
@@ -1431,6 +1435,6 @@ Conduzir o desenvolvimento do cliente
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script src="js/dist/jquery.inputmask.js"></script>
-<script src="js/script.min.js"></script>
+<script src="js/script.min.js?v=1"></script>
 </body>
 </html>
