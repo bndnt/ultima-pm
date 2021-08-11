@@ -2242,6 +2242,12 @@ body {
   background-color: #fff;
 }
 
+.thanks__image {
+  width: 74px;
+  margin-bottom: 36px;
+  height: 111px;
+}
+
 @media (max-width: 1370px) {
   .faq__ask {
     right: -50px;
@@ -3249,6 +3255,11 @@ body {
     -webkit-transition: initial;
     -o-transition: initial;
     transition: initial;
+  }
+
+  .thanks__image {
+    width: 115px;
+    margin-bottom: 60px;
   }
 }
 
