@@ -177,6 +177,14 @@
       }
     }
   }
+  &__det-small{
+    //margin-top: -15px;
+    position: relative;
+    top: -13px;
+    @media (max-width: 768px) {
+      top: 0;
+    }
+  }
   &__detail-title{
     font-style: normal;
     font-weight: normal;
@@ -254,7 +262,7 @@
       width: 100%;
     }
     @media (max-width: 650px){
-      min-height: 49px;
+      min-height: initial;
     }
   }
   &__det-hidden{

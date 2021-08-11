@@ -95,7 +95,7 @@ $(document).on('click', '.get-to-know__top-item', function (e) {
 
 var openHide2 = document.querySelectorAll('.get-to-know__point-hide-all');
 document.querySelector('.js-get-to-know__open-more').addEventListener('click', function () {
-    this.classList.toggle('active');
+    this.classList.toggle('rotate');
     for (item of openHide2) {
         item.classList.toggle('view')
     }
