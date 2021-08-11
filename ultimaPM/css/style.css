@@ -287,17 +287,17 @@ select {
 }
 
 @font-face {
-  font-family: "PTRootUI-Light";
+  font-family: "PTRootUI-Medium";
   font-display: swap;
-  src: url("../fonts/PTRootUI-Light.woff") format("woff"), url("../fonts/PTRootUI-Light.woff2") format("woff2");
+  src: url("../fonts/PTRootUI-Medium.woff") format("woff"), url("../fonts/PTRootUI-Medium.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "PTRootUI-Medium";
+  font-family: "PTRootUI-Light";
   font-display: swap;
-  src: url("../fonts/PTRootUI-Medium.woff") format("woff"), url("../fonts/PTRootUI-Medium.woff2") format("woff2");
+  src: url("../fonts/PTRootUI-Light.woff") format("woff"), url("../fonts/PTRootUI-Light.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
