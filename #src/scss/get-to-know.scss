@@ -110,6 +110,10 @@
 
   .course-for__open-more {
     padding-left: 0;
+    @media (max-width: 650px) {
+      margin-top: 33px;
+      margin-bottom: 20px;
+    }
   }
 
   //&__point-hide{
@@ -231,6 +235,7 @@
     }
     @media (max-width: 991px){
       right: -32px;
+      top: 7px;
     }
   }
 
