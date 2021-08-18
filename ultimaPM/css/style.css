@@ -183,14 +183,6 @@ select {
 }
 
 @font-face {
-  font-family: "CodecPro-Bold";
-  font-display: swap;
-  src: url("../fonts/CodecPro-Bold.woff") format("woff"), url("../fonts/CodecPro-Bold.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Gilroy-Black";
   font-display: swap;
   src: url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.woff2") format("woff2");
@@ -202,14 +194,6 @@ select {
   font-family: "CodecPro-News";
   font-display: swap;
   src: url("../fonts/CodecPro-News.woff") format("woff"), url("../fonts/CodecPro-News.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gilroy-Bold";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -231,9 +215,9 @@ select {
 }
 
 @font-face {
-  font-family: "Gilroy-Light";
+  font-family: "CodecPro-Bold";
   font-display: swap;
-  src: url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.woff2") format("woff2");
+  src: url("../fonts/CodecPro-Bold.woff") format("woff"), url("../fonts/CodecPro-Bold.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -263,9 +247,25 @@ select {
 }
 
 @font-face {
+  font-family: "Gilroy-Light";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Gilroy-Thin";
   font-display: swap;
   src: url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -666,7 +666,7 @@ body {
   font-style: normal;
   font-weight: 600;
   font-family: 'CodecPro-ExtraBold';
-  font-size: 60px;
+  font-size: 35px;
   line-height: 157%;
   color: #23A2E8;
   margin-top: 51px;
@@ -675,8 +675,12 @@ body {
   margin-right: -80px;
 }
 
+.boost-sales__numbers-title .br-long-text-mob {
+  display: none;
+}
+
 .boost-sales__numbers-title span {
-  font-size: 123px;
+  font-size: 90px;
   line-height: 193px;
 }
 
@@ -890,6 +894,13 @@ body {
 
 .course-for__subtitle {
   font-family: 'CodecPro-Bold';
+  display: inline !important;
+  padding-left: 0 !important;
+  position: static !important;
+}
+
+.course-for__subtitle:before {
+  display: none !important;
 }
 
 .course-for__detail-block-not-visible {
@@ -2378,6 +2389,24 @@ body {
   }
 }
 
+@media (max-width: 1250px) {
+  .boost-sales__numbers-title {
+    font-size: 32px;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .boost-sales__numbers-title span {
+    font-size: 68px;
+    line-height: 120%;
+  }
+
+  .boost-sales__right-text {
+    margin-right: 0;
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 1200px) {
   .top-color__wrapper {
     padding: 40px 48px 50px;
@@ -2427,15 +2456,6 @@ body {
 
   .top-color .under-points__text {
     font-size: 15px;
-  }
-
-  .boost-sales__numbers-title {
-    font-size: 42px;
-    margin-right: 0;
-  }
-
-  .boost-sales__right-text {
-    margin-right: 0;
   }
 
   .course-for__title {
@@ -2661,11 +2681,11 @@ body {
 
   .boost-sales__numbers-title {
     margin-top: 40px;
-    font-size: 42px;
+    font-size: 24px;
   }
 
   .boost-sales__numbers-title span {
-    font-size: 90px;
+    font-size: 54px;
     line-height: 120%;
   }
 
@@ -3035,16 +3055,23 @@ body {
   }
 
   .boost-sales__numbers-title {
-    font-size: 36px;
+    font-size: 22px;
+    text-align: center;
   }
 
   .boost-sales__numbers-title span {
-    font-size: 60px;
+    font-size: 48px;
     font-family: 'CodecPro-ExtraBold';
+    display: block !important;
+    text-align: center;
   }
 
   .boost-sales__right-text {
     font-size: 16px;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .course-for__title {
@@ -3497,14 +3524,19 @@ body {
 
   .boost-sales__numbers-title {
     text-align: center;
-    font-size: 34px;
+    font-size: 20px;
     display: block;
+    white-space: normal;
     margin-top: 24px;
+  }
+
+  .boost-sales__numbers-title .br-long-text-mob {
+    display: block;
   }
 
   .boost-sales__numbers-title span {
     text-align: center;
-    font-size: 59px;
+    font-size: 42px;
     display: block !important;
   }
 

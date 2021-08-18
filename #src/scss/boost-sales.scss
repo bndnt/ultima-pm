@@ -77,45 +77,63 @@
     font-style: normal;
     font-weight: 600;
     font-family: 'CodecPro-ExtraBold';
-    font-size: 60px;
+    font-size: 35px;
     line-height: 157%;
     color: #23A2E8;
     margin-top: 51px;
     text-align: right;
     white-space: nowrap;
     margin-right: -80px;
-    @media (max-width: 1200px){
-      font-size: 42px;
+    @media (max-width: 1250px){
+      font-size: 32px;
       margin-right: 0;
+      width: 100%;
     }
     @media (max-width: 991px){
       margin-top: 40px;
-      font-size: 42px;
+      font-size: 24px;
     }
     @media (max-width: 768px){
-      font-size: 36px;
+      font-size: 22px;
+      text-align: center;
       //font-family: 'CodecPro-Bold';
     }
     @media (max-width: 650px){
       text-align: center;
-      font-size: 34px;
+      font-size:20px;
       display: block;
+      white-space: normal;
       margin-top: 24px;
     }
+    @media (max-width: 360px){
+      //font-size:14px;
+    }
+    .br-long-text-mob{
+        display: none;
+      @media (max-width: 650px) {
+        display: block;
+      }
+    }
     span{
-      font-size: 123px;
+      font-size: 90px;
       line-height: 193px;
+      @media (max-width: 1250px){
+        font-size: 68px;
+        line-height: 120%;
+      }
       @media (max-width: 991px){
-        font-size: 90px;
+        font-size: 54px;
         line-height: 120%;
       }
       @media (max-width: 768px){
-        font-size: 60px;
+        font-size: 48px;
         font-family: 'CodecPro-ExtraBold';
+        display: block!important;
+        text-align: center;
       }
       @media (max-width: 650px){
         text-align: center;
-        font-size: 59px;
+        font-size: 42px;
         display: block!important;
       }
     }
@@ -138,8 +156,9 @@
       }
     }
     font-family: 'CodecPro-News';
-    @media (max-width: 1200px){
+    @media (max-width: 1250px){
       margin-right: 0;
+      margin-top: 0;
     }
     @media (max-width: 991px){
       font-size: 19px;
@@ -148,6 +167,8 @@
     }
     @media (max-width: 768px){
       font-size: 16px;
+      text-align: center;
+      justify-content: center;
     }
     @media (max-width: 650px){
       width: 100%;

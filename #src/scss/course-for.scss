@@ -288,7 +288,12 @@
   &__subtitle{
     //font-weight: 600;
     font-family: 'CodecPro-Bold';
-
+    display: inline!important;
+    padding-left: 0!important;
+    position: static!important;
+    &:before{
+      display: none!important;
+    }
   }
   &__detail-block-not-visible{
     display: none;
