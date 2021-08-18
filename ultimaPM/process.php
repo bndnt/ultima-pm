@@ -64,14 +64,15 @@ class GetResponseService
                 'json' => [
                     'name' => $name,
                     'email' => $email,
+                    'dayOfCycle' => '0',
+                    'campaign' => [
+                        'campaignId' => '5EYHl'
+                    ],
                     'customFieldValues' => [
                         [
                             'customFieldId' => 'pcfXV2',
                             'value' => [$tel]
                         ]
-                    ],
-                    'campaign' => [
-                        'campaignId' => '5EYHl'
                     ],
                     'ipAddress' => $ip
                 ]

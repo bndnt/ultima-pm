@@ -28,7 +28,7 @@ $('#main-form').submit(function(e) {
 
             $form.find('button[type="submit"]').prop('disabled', false);
 
-            window.location = 'https://payment.ultima.school/design-thanks.html';
+            window.location = '/gestao-de-produtos/thanks-page.html';
         },
         error: function() {
             mainFormProcessing = false;
