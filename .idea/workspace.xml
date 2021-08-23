@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50f78d95-a9ba-46b9-a6c5-65b4588b5b0a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/#src/_boost-sales.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/_boost-sales.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#src/_course-for.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/_course-for.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/_get-to-know.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/_get-to-know.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/_top-block.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/_top-block.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/scss/boost-sales.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/boost-sales.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/scss/course-for.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/course-for.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#src/scss/fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/fonts.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ultimaPM/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/ultimaPM/css/style.css" afterDir="false" />
@@ -99,6 +94,8 @@
       <workItem from="1628611046369" duration="22115000" />
       <workItem from="1628667557003" duration="10730000" />
       <workItem from="1629206662272" duration="3892000" />
+      <workItem from="1629273751476" duration="359000" />
+      <workItem from="1629482354363" duration="239000" />
     </task>
     <servers />
   </component>
