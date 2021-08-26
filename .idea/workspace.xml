@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50f78d95-a9ba-46b9-a6c5-65b4588b5b0a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/#src/_course-for.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/_course-for.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/_price.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/_price.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/_top-block.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/_top-block.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#src/scss/fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/fonts.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ultimaPM/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/ultimaPM/css/style.css" afterDir="false" />
@@ -95,7 +96,8 @@
       <workItem from="1628667557003" duration="10730000" />
       <workItem from="1629206662272" duration="3892000" />
       <workItem from="1629273751476" duration="359000" />
-      <workItem from="1629482354363" duration="239000" />
+      <workItem from="1629482354363" duration="389000" />
+      <workItem from="1629895645546" duration="117000" />
     </task>
     <servers />
   </component>

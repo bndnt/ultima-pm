@@ -183,14 +183,6 @@ select {
 }
 
 @font-face {
-  font-family: "CodecPro-ExtraBold";
-  font-display: swap;
-  src: url("../fonts/CodecPro-ExtraBold.woff") format("woff"), url("../fonts/CodecPro-ExtraBold.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "CodecPro-News";
   font-display: swap;
   src: url("../fonts/CodecPro-News.woff") format("woff"), url("../fonts/CodecPro-News.woff2") format("woff2");
@@ -202,6 +194,14 @@ select {
   font-family: "Gilroy-Black";
   font-display: swap;
   src: url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CodecPro-ExtraBold";
+  font-display: swap;
+  src: url("../fonts/CodecPro-ExtraBold.woff") format("woff"), url("../fonts/CodecPro-ExtraBold.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -234,30 +234,6 @@ select {
   font-family: "Gilroy-Light";
   font-display: swap;
   src: url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gilroy-Medium";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gilroy-Regular";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gilroy-SemiBold";
-  font-display: swap;
-  src: url("../fonts/Gilroy-SemiBold.woff") format("woff"), url("../fonts/Gilroy-SemiBold.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -306,6 +282,30 @@ select {
   font-family: "PTRootUI-Regular";
   font-display: swap;
   src: url("../fonts/PTRootUI-Regular.woff") format("woff"), url("../fonts/PTRootUI-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  font-display: swap;
+  src: url("../fonts/Gilroy-SemiBold.woff") format("woff"), url("../fonts/Gilroy-SemiBold.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
