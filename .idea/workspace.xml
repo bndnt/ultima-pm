@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50f78d95-a9ba-46b9-a6c5-65b4588b5b0a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/#src/_price.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/_price.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/_top-block.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/_top-block.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/scss/fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/_header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultimaPM/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/ultimaPM/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultimaPM/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ultimaPM/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultimaPM/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ultimaPM/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +92,9 @@
       <workItem from="1629206662272" duration="3892000" />
       <workItem from="1629273751476" duration="359000" />
       <workItem from="1629482354363" duration="389000" />
-      <workItem from="1629895645546" duration="117000" />
+      <workItem from="1629895645546" duration="160000" />
+      <workItem from="1629908526234" duration="197000" />
+      <workItem from="1629980698656" duration="17000" />
     </task>
     <servers />
   </component>
