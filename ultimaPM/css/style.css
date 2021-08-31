@@ -183,9 +183,9 @@ select {
 }
 
 @font-face {
-  font-family: "CodecPro-ExtraBold";
+  font-family: "Gilroy-Black";
   font-display: swap;
-  src: url("../fonts/CodecPro-ExtraBold.woff") format("woff"), url("../fonts/CodecPro-ExtraBold.woff2") format("woff2");
+  src: url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -199,9 +199,9 @@ select {
 }
 
 @font-face {
-  font-family: "Gilroy-Black";
+  font-family: "CodecPro-ExtraBold";
   font-display: swap;
-  src: url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.woff2") format("woff2");
+  src: url("../fonts/CodecPro-ExtraBold.woff") format("woff"), url("../fonts/CodecPro-ExtraBold.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -2506,8 +2506,8 @@ body {
   }
 
   .top-color__image {
-    width: 470px;
-    height: 440px;
+    width: 336px;
+    height: 434px;
   }
 
   .top-color .under-points .container {

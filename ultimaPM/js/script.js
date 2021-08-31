@@ -121,7 +121,7 @@ var swiper1 = new Swiper(".mentorsSwiper", {
     slidesPerView: 'auto',
     spaceBetween: 80,
     speed: 1000,
-    mousewheel: true,
+    // mousewheel: true,
     keyboard: true,
     breakpoints: {
         100: {
